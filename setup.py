@@ -4,12 +4,12 @@ from distutils.core import setup
 
 
 setup(name='python-bittrex',
-      version='0.2.0',
+      version='0.2.1',
       packages=['bittrex'],
       modules=['bittrex'],
       description='Python bindings for bittrex API.',
-      author='Eric Somdahl',
-      author_email='eric@corsairconsulting.com',
+      author='benbr',
+      author_email='bbroche@enst.fr',
       classifiers=[
           'Programming Language :: Python',
           'Programming Language :: Python :: 2',
