@@ -229,14 +229,14 @@ class Bittrex(object):
             API_V1_1: '/public/getticker',
         }, options={'market': market}, protection=PROTECTION_PUB)
 
-    def get_ticks(self):
+    def get_ticks(self, market, tickinterval):
         """
 	Used to get ticker history. available >2.0
 	"""
 	return self._api_query(path_dict={
 	    API_V1_1: '/pub/Market/GetTicks',
             API_V2_0: '/pub/Market/GetTicks'
-        }, protection=PROTECTION_PUB)
+        }, options={'market': market,'marketname': market,'tickinterval': tickinterval}, protection=PROTECTION_PUB)
 
     def get_market_summaries(self):
         """
